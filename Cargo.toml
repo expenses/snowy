@@ -1,0 +1,20 @@
+[package]
+name = "snowy"
+version = "0.1.0"
+authors = ["Ashley Ruglys <ashley.ruglys@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+grid_2d = { version = "0.14.6", features = ["serialize"] }
+serde = { version = "1.0.115", features = ["derive"] }
+ron = "0.6.1"
+legion = { version = "0.3.0", features = ["codegen"] }
+winit = { version = "0.22.2", default-features = false }
+wgpu = "0.6.0"
+zerocopy = "0.3.0"
+image = { version = "0.23.9", default-features = false, features = ["png"] }
+cgmath = "0.17.0"
+futures = "0.3.5"
+line_drawing = "0.8.0"
